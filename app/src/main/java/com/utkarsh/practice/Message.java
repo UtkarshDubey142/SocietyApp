@@ -8,10 +8,9 @@ public class Message {
 
     public Message () {}   //Default Constructor:
 
-    public Message(String userMessage, String name, String key) {
+    public Message(String userMessage, String name) {
         this.userMessage = userMessage;
         this.name = name;
-        this.key = key;
     }
 
     public String getUserMessage() {

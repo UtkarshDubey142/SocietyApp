@@ -50,8 +50,7 @@
                 android:layout_height="45dp"
                 android:src="@drawable/ic_send"
                 android:id="@+id/send"
-                android:background="#ffffff"
-                ></ImageButton>
+                android:background="#ffffff" />
 
 
         </LinearLayout>

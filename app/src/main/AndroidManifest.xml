@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Practice">
         <activity android:name=".Registration"></activity>
-        <activity android:name=".NavigationBar" />
+        <activity android:name=".NavigationActivity" />
         <activity android:name=".Splashpage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

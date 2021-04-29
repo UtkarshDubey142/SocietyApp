@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 if (task.isSuccessful())
                   {
                       // redirect to navigation_bar:
-                      startActivity(new Intent(MainActivity.this, NavigationBar.class));
+                      startActivity(new Intent(MainActivity.this, NavigationActivity.class));
                   }
                 else
                   {

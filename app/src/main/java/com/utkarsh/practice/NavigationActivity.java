@@ -15,9 +15,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 
 
-public class NavigationBar extends AppCompatActivity implements View.OnClickListener {
-
-    private BottomNavigationView navigationView;
+public class NavigationActivity extends AppCompatActivity implements View.OnClickListener {
 
     @SuppressLint("NonConstantResourceId")
     @Override
@@ -29,7 +27,7 @@ public class NavigationBar extends AppCompatActivity implements View.OnClickList
         ViewPager viewPager = findViewById(R.id.view_pager);
         viewPager.setAdapter(new ViewPagerAdapter(getSupportFragmentManager()));
 
-        navigationView = findViewById(R.id.buttom_navigation);
+        BottomNavigationView navigationView = findViewById(R.id.buttom_navigation);
         navigationView.setOnNavigationItemSelectedListener(item -> {
             switch (item.getItemId()) {
                 case R.id.ic_info:
