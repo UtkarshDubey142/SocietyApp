@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".comment_Fragment">
 
     <!-- TODO: Update blank fragment layout-->
@@ -10,50 +11,36 @@
     <!--Specific Section For Messages-->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvMessage"
+        android:layout_weight="1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginBottom="45dp">
-
+        android:layout_height="0dp">
     </androidx.recyclerview.widget.RecyclerView>
 
     <!--Specific Section For Keyboard And Send Option-->
-    <RelativeLayout
+
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:paddingTop="5dp"
-        >
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:paddingTop="5dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <EditText
+            android:id="@+id/msgboard"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
+            android:textColor="#c90dbc"
+            android:layout_weight="1"
+            android:hint="Enter Comment">
+        </EditText>
 
-            <EditText
-                android:id="@+id/msgboard"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:textColor="#c90dbc"
-                android:hint="Enter Comment"
-                >
+        <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_send"
+            android:id="@+id/send"
+            android:background="#ffffff" />
 
-            </EditText>
-
-            <ImageButton
-                android:layout_width="45dp"
-                android:layout_height="45dp"
-                android:src="@drawable/ic_send"
-                android:id="@+id/send"
-                android:background="#ffffff" />
-
-
-        </LinearLayout>
-
-    </RelativeLayout>
-</RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
