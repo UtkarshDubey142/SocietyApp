@@ -113,4 +113,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });     //  Mauth object:
 
     }
+
+    // For stopping the used to go back to "logout page"
+    @Override
+    public void onBackPressed() {
+        //super.onBackPressed();
+    }
 }

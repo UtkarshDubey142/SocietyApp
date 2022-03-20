@@ -24,11 +24,11 @@ public class setting_Fragment extends Fragment {
         super.onCreateView(inflater, container , savedInstanceState);
         View rootView = inflater.inflate(R.layout.fragment_setting_, container, false);
         TextView textView = rootView.findViewById(R.id.optionLogout);
+       // TextView textView1 = rootView.findViewById(R.id.viewProfile)
         textView.setOnClickListener(v -> {
             FirebaseAuth.getInstance().signOut();
             getActivity().startActivity(new Intent(getContext(), MainActivity.class));
         });
-
         return  rootView;
        // return inflater.inflate(R.layout.fragment_setting_, container, false);
     }

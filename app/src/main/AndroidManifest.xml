@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Practice">
-        <activity android:name=".Registration"></activity>
+        <activity android:name=".Registration" />
         <activity android:name=".NavigationActivity" />
         <activity android:name=".Splashpage">
             <intent-filter>
@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".ForgotPassword"/>
+        <activity android:name=".ForgotPassword" />
     </application>
 
 </manifest>

@@ -9,9 +9,10 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/viewProfile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Profile"
+        android:text="Hello User !"
         android:layout_gravity="bottom|center_horizontal"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"

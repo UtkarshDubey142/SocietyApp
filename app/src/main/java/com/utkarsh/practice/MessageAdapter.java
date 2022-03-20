@@ -50,7 +50,7 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageA
         if(AllMethods.name.equals(message.getName())){
             holder.textView.setText("You:" + message.getUserMessage());
             holder.textView.setGravity(Gravity.START);
-            holder.linearLayout.setBackgroundColor(Color.parseColor("#EF9E73"));
+            holder.linearLayout.setBackgroundColor(Color.parseColor("#536872"));
         }
         else{
             holder.textView.setText( message.getName()+":" + message.getUserMessage());
